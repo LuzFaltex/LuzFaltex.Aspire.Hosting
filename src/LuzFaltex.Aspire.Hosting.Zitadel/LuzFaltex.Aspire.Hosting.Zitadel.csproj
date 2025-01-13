@@ -17,4 +17,8 @@
     <PackageReference Include="Aspire.Hosting" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="D:\Projects\apps\LuzFaltex\LuzFaltex.Aspire.Hosting\src\LuzFaltex.Aspire.Hosting.Zitadel/README.md" />
+  </ItemGroup>
+
 </Project>
