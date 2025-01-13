@@ -1,0 +1,20 @@
+﻿<Project Sdk="Remora.Sdk">
+
+  <PropertyGroup>
+    <LibraryFrameworks>net8.0;net9.0</LibraryFrameworks>
+	<TargetNetStandard>false</TargetNetStandard>
+	<VersionPrefix>0.1.0</VersionPrefix>
+	<Description>Provides an Aspire component for Zitadel.</Description>
+	<PackageReleaseNotes>Initial release.</PackageReleaseNotes>
+	<PackageTags>$(PackageTags);Zitadel;Aspire;Hosting</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
+    <PackageReference Include="Aspire.Hosting" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net9.0'">
+    <PackageReference Include="Aspire.Hosting" />
+  </ItemGroup>
+
+</Project>
