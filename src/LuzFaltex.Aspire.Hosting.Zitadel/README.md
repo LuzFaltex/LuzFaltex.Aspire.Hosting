@@ -19,7 +19,7 @@ Then, in the *Program.cs* file of `AppHost`, add a Zitadel resource and enable s
 ```cs
 var zitadel = builder.AddZitadel("zitadel", 8080);
 
-var myService = builder.AddProject<Projects.MyService>)_
+var myService = builder.AddProject<Projects.MyService>)
 					   .WithReference(zitadel);
 ```
 
