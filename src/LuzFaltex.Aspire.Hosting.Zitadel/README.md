@@ -20,7 +20,7 @@ Then, in the *Program.cs* file of `AppHost`, add a Zitadel resource and enable s
 var zitadel = builder.AddZitadel("zitadel", 8080);
 
 var myService = builder.AddProject<Projects.MyService>)
-					   .WithReference(zitadel);
+                       .WithReference(zitadel);
 ```
 
 **Recommendation**: For local development use a stable port for the Zitadel resource (8080 in the example above). It can be any port, but it should be stable to avoid issues with browser cookies that will persist OIDC tokens (which include the authority url, with port) beyond the lifetime of the AppHost.
